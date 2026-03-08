@@ -4,70 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yuzhao Cao | Developer</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #0f172a;
-  color: #f1f5f9;
-}
-
-/* NAVBAR */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #1e293b;
-  padding: 15px 0;
-}
-
-.nav-container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav a {
-  color: #f1f5f9;
-  text-decoration: none;
-  margin-left: 25px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #38bdf8;
-}
-
-/* MAIN CONTENT */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 0;
-}
-h1 { font-size: 2.5rem; }
-h2 { border-bottom: 1px solid #334155; padding-bottom: 10px; }
-.project {
-  background: #1e293b;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-}
-a {
-  color: #38bdf8;
-  text-decoration: none;
-}
-.btn {
-  display: inline-block;
-  padding: 8px 15px;
-  background: #38bdf8;
-  color: #0f172a;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -77,13 +14,14 @@ a {
   <div class="nav-container">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
   </div>
 </nav>
 
 <div class="container">
-    <h1>Certifications</h1>
+    <h2>Certifications</h2>
     
-    <div class="project">
+    <div class="project-card">
         <h3>Preparing Data for Analysis with Microsoft Excel</h3>
         <p><strong>Issued by Microsoft - 2025</strong></p>
         <p>
@@ -96,7 +34,7 @@ a {
         <a class="btn" href="https://coursera.org/share/76fab3f0c5f080352ac3d5c0bd1d7b2c">View Certificate</a>
     </div>
 
-    <div class="project">
+    <div class="project-card">
         <h3>Harnessing the Power of Data with Power BI</h3>
         <p><strong>Issued by Microsoft - 2025</strong></p>
         <p>
@@ -112,7 +50,7 @@ a {
         <a class="btn" href="https://coursera.org/share/40c816b9f1140fdadf3ffa97ac33d5b4">View Certificate</a>
     </div>
 
-    <div class="project">
+    <div class="project-card">
         <h3>Extract, Transform and Load Data in Power BI</h3>
         <p><strong>Issued by Microsoft - 2026</strong></p>
         <p>
@@ -129,6 +67,8 @@ a {
     </div>
   
 </div>
+
+
 
 </body>
 </html>

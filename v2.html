@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuzhao Cao | Developer</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+<h1>Yuzhao Cao</h1>
+<div class="typing" id="typing"></div>
+
+
+</section>
+
+<!-- About me -->
+<section id="projects" class="section">
+  <h2>About Me</h2>
+  <h4>
+  I'm a developer who enjoys building things that actually solve problems.
+  Most of my projects focus on creating simple, efficient systems and learning
+  new technologies along the way.
+  </h4>
+
+  <h4>
+  Outside of coding I try to keep life balanced. I spend a good amount of time
+  at the gym, I'm currently grinding daily lessons on Duolingo, and I also
+  play League of Legends with friends when I need a break from debugging.
+  </h4>
+
+  <h4>
+  My long-term goal is to keep improving as an engineer, build products that
+  people genuinely use, and work on systems that scale. I enjoy learning new
+  tools, experimenting with ideas, and turning small side projects into
+  something real.
+  </h4>
+
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Featured Projects</h2>
+
+  <div class="project-card">
+    <h3>Pastry Recipes – Responsive Recipe Website</h3>
+    <div class="project-details">
+    <p>
+      Created a front‑end web project dedicated to pastry recipes, focusing on clean design and seamless user experience. 
+      The website features a custom JavaScript‑based page router that switches between Home, Recipe Gallery, Categories, 
+      and About sections without reloading. Each recipe card displays essential metadata (rating, preparation time, difficulty) 
+      and opens a modal with detailed ingredients and instructions.
+    </p>
+
+    <p>
+      More features to be continued.
+    </p>
+
+    <a class="btn" href="https://github.com/yuzhaocao/bakery.github.io">View Code</a>
+    <a class="btn" href="https://yuzhaocao.github.io/bakery.github.io/">Live Demo</a>
+  </div>
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Technical Skills</h2>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="skill-bar">
+      <div class="skill-fill" style="width:90%"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>React</p>
+    <div class="skill-bar">
+      <div class="skill-fill" style="width:85%"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>Node.js</p>
+    <div class="skill-bar">
+      <div class="skill-fill" style="width:80%"></div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Yuzhao Cao | Built with passion
+</footer>
+
+<script>
+/* Typing Animation */
+const text = "Full-Stack Developer | Problem Solver | System Builder";
+let i = 0;
+function typingEffect() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typingEffect, 50);
+  }
+}
+typingEffect();
+
+/* Fade In on Scroll */
+const sections = document.querySelectorAll('.section');
+window.addEventListener('scroll', () => {
+  sections.forEach(section => {
+    const position = section.getBoundingClientRect().top;
+    if (position < window.innerHeight - 100) {
+      section.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
